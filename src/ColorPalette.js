@@ -7,12 +7,10 @@ export const CPApp = () => {
 
     console.log(color);
 
-    return [<div
-        style={{
+    return [<div style={{
             backgroundColor: color.hex.toString(),
             width: '300px',
             height: '300px',
-            float: "right"
-        }}
-    />,<ColorPicker width={500} height={400} color={color} onChange={setColor} dark/>];
+            float: "right" }}/>,
+        <ColorPicker width={500} height={400} color={color} onChange={setColor} dark/>];
 };
